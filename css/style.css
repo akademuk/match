@@ -1,0 +1,1779 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #595959;
+    background: #F9FBFE;
+}
+p {
+    line-height: 1.8em;
+    margin: 20px 0;
+}
+li {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+.wrapper {
+    max-width: 1250px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 15px 105px;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+h2 {
+    font-size: 32px;
+    margin: 10px 0 20px 0;
+    line-height: 1.2em;
+    color:#121721;
+    font-weight: 400;
+}
+h4 {
+    color:#121721;
+    font-size: 28px;
+    line-height: 1.2em;
+    margin-left: 15px;
+}
+h5 {
+    font-size: 28px;
+    line-height: 1.2em;
+    color:#121721;
+    font-weight: 400;
+}
+.margin {
+    margin: 0 !important;
+}
+/*-----------------Header----------------------------------------------*/
+header {
+    background: #0D0B2F;
+    width: 100%;
+    height: 90px;
+}
+.fotter-con {
+    position: relative;
+}
+.select {
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    display: none;
+    z-index: 2;
+}
+.select a {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    background: linear-gradient(rgb(13,11,47),rgb(13,11,47));
+    border: 1px solid #5997E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select-footer a {
+    padding: 10px 10px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 13px;
+    background: linear-gradient(rgb(13,11,47),rgb(13,11,47));
+    border: 1px solid #5997E3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select.language {
+    left:-100px;
+}
+.language a {
+    width: 220px !important;
+    font-size: 12px !important;
+    justify-content: inherit;
+}
+.select-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    left: -388%;
+    display: none;
+    z-index: 2; 
+}
+.fotter-con .england-footer:hover + .select-footer {
+    display: block;
+}
+.select-footer:hover{
+    display: block;
+}
+
+.ireland:before{
+    content: "";
+    background: url(../img/ireland-flag-round-icon-256.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+.australia:before{
+    content: "";
+    background: url(../img/australia-flag-round-icon-256.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+.zealand:before{
+    content: "";
+    background: url(../img/new-zealand-flag-round-xs.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+.nigeria:before{
+    content: "";
+    background: url(../img/nigeria-flag-round-icon-256.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+.africa:before{
+    content: "";
+    background: url(../img/south-africa-flag-round-xs.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+.kenya:before{
+    content: "";
+    background: url(../img/kenya-flag-round-xs.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.country:before{
+    content: "";
+    background: url(../img/Globe.png);
+    width: 23px;
+    height: 23px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+}
+.header-navigation li a:hover + .select{
+    display: block;
+}
+.header-navigation li .select:hover{
+    display: block !important;
+}
+.england img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+.england-footer img{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+.england-footer {
+    display: flex;
+    min-height: 25px;
+    min-width: 25px;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 10px;
+}
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-navigation li:nth-of-type(1) a:before{
+    content: '';
+    background:url(../img/rocket.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.header-navigation li:nth-of-type(2) a:before{
+    content: '';
+    background:url(../img/ball.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.header-navigation li:nth-of-type(3) a:before{
+    content: '';
+    background:url(../img/football.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.information {
+    background:url(../img/information.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 250px;
+    width: 100%;
+    background-position: bottom;
+}
+.logotype img{
+    height: 20px;
+}
+.header-navigation {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-between;
+}
+.header-navigation li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.header-navigation li a:hover {
+    background: #5997E3;
+}
+.header-navigation li {
+    margin-bottom: 0 !important;
+    position: relative;
+}
+.header-navigation li a::after {
+    content: "";
+    background: url(../img/arrow-white.svg);
+    width:  9px;
+    height: 15px;
+    display: flex;
+    margin-left: 10px;
+    transform: rotate(90deg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.no-after::after {
+    content: none !important;
+}
+.no-after:hover{
+   background: transparent !important;
+}
+.select a::after {
+    content: none !important;
+}
+.select.one a::before {
+    content: none !important;
+}
+.select a:hover {
+    background: #5997E3;
+}
+/*-----------------Header----------------------------------------------*/
+
+/*-----------------Information----------------------------------------------*/
+.information-left p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.information-left-navigation ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+}
+.information-left-navigation ul li svg{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.information-left-navigation ul li svg path {
+    fill: #fff;
+}
+.information-left-navigation ul li{
+    list-style: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+h1 {
+    font-size: 42px;
+    color: #fff;
+}
+.information-right img {
+    width: 178px;
+    height: 178px;
+    margin-left: 70px;
+}
+h6 {
+    color: #000;
+    width: 100%;
+    background: #EFF5FB;
+    padding: 15px 10px 15px 45px;
+    border-radius: 20px 20px 0 0;
+    font-weight:600;
+}
+.accardion-container {
+    position: relative;
+    margin-bottom: 40px;
+}
+.accardion-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    transform: rotate(270deg);
+}
+/*-----------------Information----------------------------------------------*/
+
+/*-----------------Page Content----------------------------------------------*/
+.page-content {
+    min-height: 47px;
+    background: linear-gradient(rgb(239,245,251),rgb(239,245,251));
+    margin-bottom: 20px;
+}
+.page-content-title {
+    font-size: 13px;
+    margin: 0 !important;
+    margin-right: 10px !important;
+}
+.page-content-list li a {
+    font-size: 13px;
+    color: #000;
+}
+.page-content-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.page-content-list li{
+    margin-bottom: 0;
+}
+/*-----------------Page Content----------------------------------------------*/
+
+/*-----------------Bookmakers Container----------------------------------------------*/
+.bookmakers-header-left button:nth-of-type(1) {
+    background: #5997E3;
+    color: #fff;
+    border: none;
+    margin-right: 20px;
+}
+.bookmakers-main {
+    margin-top: 30px;
+    width: 100%;
+}
+.bookmakers-card {
+    margin-bottom: 25px;
+}
+.bookmakers-card-container {
+    border: 1px solid rgba(198,198,198,0.2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 170px;
+}
+.bookmakers-card-left {
+    background: #F0F0F0;
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0 0 20px;
+}
+.bookmakers-card-center {
+    width: 54%;
+    padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.bookmakers-card-center nav ul li {
+    display: flex;
+    position: relative;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 11px;
+}
+.bookmakers-card-center nav ul li:nth-last-child(1) {
+   padding-right: 0;
+}
+.bookmakers-card-center nav ul li::before {
+    content: "";
+    background: url(../img/list.png);
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bookmakers-card-center nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+}
+.bookmakers-card-right {
+    width: 23%;
+    background: #EFF5FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    padding: 0 20px;
+    text-align: center;
+}
+.bookmakers-card-left img {
+    width: 70%;
+    max-width: 50%;
+    object-fit: cover;
+}
+.bookmakers-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EDEDED;
+    padding-bottom: 30px;
+}
+.bookmakers-header-left {
+    display: flex;
+}
+.bookmakers-header button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: transparent;
+    padding: 10px 15px; 
+    font-size: 16px;
+    border-radius: 100px;
+    border: 1px solid #EDEDED;
+}
+.bookmakers-card-price {
+    font-size: 23px;
+    font-weight: bold !important;
+    color: #5997E3;
+    margin: 0;
+    line-height: 1.3em !important;
+    margin-bottom: 20px;
+}
+.bookmakers-card-right button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: #5997E3;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+}
+.bookmakers-card-right button::after {
+    content: "→";
+    display: flex;
+    width: 10px;
+    height: 3px;
+    color: #fff;
+    margin-left: 20px;
+}
+.bookmakers-footer {
+    margin-top: 10px;
+    color: rgb(106, 107, 108);
+    font-size: 12px;
+}
+.bookmakers-card-tittle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.medal {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+     border-radius: 100px;
+     margin: 0;
+}
+.medal-background-one {
+    background:#FBEFA5;
+}
+.medal-background-two {
+    background:#F1F1F1;
+}
+.medal-background-free {
+background:  #F6D2B0;
+}
+.medal-background-one::before {
+    content: "";
+    background: url(../img/medal1.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.medal-background-two::before {
+    content: "";
+    background: url(../img/medal2.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.medal-background-free::before {
+    content: "";
+    background: url(../img/medal.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(2) .bookmakers-card-left {
+    background: #fff;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(3) .bookmakers-card-left {
+    background: #F7721E;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(4) .bookmakers-card-left {
+    background: #044992;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(5) .bookmakers-card-left {
+    background: #D80E84;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(6) .bookmakers-card-left {
+    background: #000;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(7) .bookmakers-card-left {
+    background: #001D61;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(8) .bookmakers-card-left {
+    background: #5D2391;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(9) .bookmakers-card-left {
+    background: #000;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(10) .bookmakers-card-left {
+    background: #01133B;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(11) .bookmakers-card-left {
+    background: #0D0D0D;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(12) .bookmakers-card-left {
+    background: #000000;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(13) .bookmakers-card-left {
+    background: #023623;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(14) .bookmakers-card-left {
+    background: #17733D;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(15) .bookmakers-card-left {
+    background: #000000;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(16) .bookmakers-card-left {
+    background: #15213C;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(17) .bookmakers-card-left {
+    background: #062F6D;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(18) .bookmakers-card-left {
+    background: #35383D;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(19) .bookmakers-card-left {
+    background: #09080C;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(20) .bookmakers-card-left {
+    background: #000000;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(21) .bookmakers-card-left {
+    background: #000000;
+}
+.bookmakers-main .bookmakers-card:nth-of-type(22) .bookmakers-card-left {
+    background: #333743;
+}
+/*-----------------Bookmakers Container----------------------------------------------*/
+
+/*-----------------Free Bet Offers----------------------------------------------*/
+.table-free-bet-offers {
+    width: 100%;
+}
+.table-free-bet-offers .table-tr{
+    background: #EFF5FB;
+    height: 40px;
+}
+.table-free-bet-offers .table-tr th{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #3b3b3b;
+    line-height: 1.8em;
+    font-size: 16px;
+}
+.table-free-bet-offers .table-tr th:nth-of-type(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: 210px;
+}
+.table-free-bet-offers .table-tr th:nth-of-type(2) {
+    width: 73%;
+}
+.table-free-bet-offers tr td {
+    min-height: 45px;
+    border: 1px solid #E8E8E8;
+    padding: 10px;
+    height: 100%;
+    line-height: 1.5em;
+}
+.table-free-bet-offers tr td:nth-of-type(1) {
+   text-align: center;
+   vertical-align: middle;
+}
+.table-free-bet-offers tr td:nth-of-type(2) {
+    vertical-align: middle;
+ }
+.table-free-bet-offers tr td:nth-of-type(3) {
+    text-align: center;
+    vertical-align: middle;
+ }
+.table-free-bet-offers tr td a{
+    font-size: 16px;
+    color: #5997E3;
+    font-weight: 600;
+}
+.table-free-bet-offers tr td button{
+    font-size: 14px;
+    width: 180px;
+    background: #5997E3;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 70px;
+    letter-spacing: 1px;
+}
+.table-free-bet-offers tr td button::before {
+    content: "";
+    background: url(../img/claim.svg);
+    width: 15px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+    left: 35px;
+    top: 11px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/*-----------------Free Bet Offers----------------------------------------------*/
+
+/*-----------------Betting Sites Articles----------------------------------------------*/
+.betting-sites-articles {
+    margin-bottom: 50px;
+}
+.betting-sites-articles .wrapper h2{
+    margin-bottom: 50px;
+}
+.betting-sites-articles-container-bottom,
+.betting-sites-articles-container-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.betting-sites-articles-container-top {
+    margin-bottom: 50px;
+}
+/*-----------------Betting Sites Articles----------------------------------------------*/
+
+/*-----------------Info Container----------------------------------------------*/
+.info-container p:nth-of-type(2) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.info-container-evaluate ul {
+    padding-left: 65px;
+}
+.info-container-nav li{
+    position: relative;
+}
+.info-container-nav li:before {
+    content: "";
+    background: url(../img/arrow.svg);
+    width:  9px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.info-container p:nth-of-type(3) {
+    margin-bottom: 30px;
+}
+.info-container-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.info-container-content-company {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.info-container-content-svg {
+    display: flex;
+    align-items: center;
+}
+.info-container-content-svg h4 {
+   font-weight: 400;
+}
+.info-container-content-svg span {
+    width: 55px;
+    height: 55px;
+    background: #5997E3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-container-content-svg svg {
+    width: 25px;
+    height: 25px;
+}
+.info-container-content-svg svg path {
+    fill: #fff;
+}
+.info-container-content-svg span img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+.betting-sites-reviews-container .info-container-content-svg span {
+    background: transparent;
+}
+/*-----------------Info Container----------------------------------------------*/
+
+/*-----------------Betting Sites Reviews----------------------------------------------*/
+.betting-sites-reviews-nav {
+    display: flex;
+}
+.betting-sites-reviews-nav {
+    margin-top: 20px;
+}
+.betting-sites-reviews-container {
+    margin-bottom: 20px;
+}
+/*-----------------Betting Sites Reviews----------------------------------------------*/
+
+/*-----------------Comparing Betting Sites----------------------------------------------*/
+.table-comparing-betting-sites{
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+}
+.table-comparing-betting-sites tr td {
+    text-align: center;
+    vertical-align: middle;
+    height: 47px;
+    border: 1px solid #EEEEEE;
+}
+.table-comparing-betting-sites tr td:nth-of-type(1) {
+   font-weight: 600;
+}
+/*-----------------Comparing Betting Sites----------------------------------------------*/
+
+/*-----------------Companies----------------------------------------------*/
+.container-companies {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EDEDED;
+}
+.container-companies-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    min-width: 200px;
+    width: 100%;
+    padding-right: 20px;
+}
+.container-companies-right {
+    border-left: 1px solid #EDEDED;
+    padding-left: 20px;
+}
+.container-companies-left img {
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+/*-----------------Companies----------------------------------------------*/
+.advantages, .disadvantages {
+    width: 50%;
+}
+.advantages li:nth-of-type(1) {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.advantages li:nth-of-type(1)::before {
+  content: none;
+}
+.disadvantages li:nth-of-type(1)::before {
+  content: none;
+}
+.disadvantages li:nth-of-type(1) {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.advantages li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.advantages li::before {
+    content: '';
+    background: url(../img/advantages.svg);
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    display: flex;
+    background-size: contain;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+}
+.disadvantages li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.disadvantages li::before {
+    content: '';
+    background: url(../img/disadvantages.svg);
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.table-overflow {
+    overflow-x: hidden;
+	overflow-y: auto;
+	height: 400px;
+}
+.table-info {
+    font-style: italic;
+    margin-top: 25px;
+}
+.table-info-border {
+    border-left: 4px solid #5997E3;
+    padding-left: 20px;
+}
+.table-overflow::-webkit-scrollbar {
+    width: 10px;
+}
+.table-overflow::-webkit-scrollbar {
+    width: 10px;
+}
+.table-overflow::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+.table-overflow::-webkit-scrollbar-track {
+    background-color: transparentize(#ccc, 0.7);
+}
+.table-overflow::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: transparentize(#ccc, 0.5);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.table-title {
+    background: #08053D;
+    width: 100%;
+    height: 60px;
+}
+.table-title th{
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 600;
+}
+tr:nth-child(even) {
+    background-color: #EFF5FB;
+}
+button svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.review {
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.betting-sites {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.betting-sites svg{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+.betting-sites svg path{
+    fill: #326571;
+}
+.betting-sites a{
+    font-weight: 600;
+    color: #121721;
+    line-height: 1.8em;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+h3 {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 0;
+}
+.review-white {
+    color: #fff !important;
+}
+.btn-bonus{
+    font-size: 14px;
+    width: 220px;
+    background: #5997E3;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    padding: 15px 22px;
+    border-radius: 20px;
+    position: relative;
+    padding-left: 70px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.bonuses-container-top {
+    display: flex;
+}
+.bonuses-container {
+    margin-bottom: 25px;
+}
+.bonuses-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bonuses-container-top img {
+    max-width: 200px;
+    width: 100%;
+    margin-right: 35px;
+    object-fit: contain;
+}
+.btn-bonus::before {
+    content: "";
+    background: url(../img/claim.svg);
+    width: 15px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+    left: 35px;
+    top: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.info-color {
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 3px 0px, rgb(0 0 0 / 20%) 0px 0px 1px 0px, rgb(254 254 254) 0px 0px 2px inset;
+    background: linear-gradient(rgb(255,94,106) 0%,rgb(236,70,82) 99%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.bet-now {
+    border-radius: 20px;
+    padding: 12px 22px;
+    background: #5997E3;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-football-container {
+    margin-bottom: 30px;
+}
+.bet-now::after {
+    content: "→";
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 3px;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container-companies-left span {
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.content-company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.content-company img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    margin-right: 15px;
+}
+.payment-methods-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+.payment-methods-container img{
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+.payment-methods-container-right {
+    padding-left: 25px;
+}
+.how-to-sign-up-tittle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.how-to-sign-up-tittle span {
+    width: 56px;
+    height: 56px;
+    background: #5997E3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.how-to-sign-up-tittle span svg {
+    width: 25px;
+    height: 25px;
+}
+.how-to-sign-up-tittle span svg path {
+    fill: #fff;
+}   
+.how-to-sign-up-container {
+    margin-bottom: 30px;
+}
+.background-table {
+    border-radius: 20px;
+    padding: 20px;
+    background: #F0F5FB;
+}
+.background-table div table tr td {
+    border: 1px solid #EEEEEE;
+    background: white;
+    padding: 15px;
+}
+.manage {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+.faq {
+    margin-bottom: 50px;
+}
+.manage img{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid#5997E3;
+    margin-right: 20px;
+    object-fit: cover;
+}
+.manage-container a {
+    color:#5997E3;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.manage-container p {
+    font-size: 12px;
+    font-weight: 400;
+}
+.footer {
+    background: #08053D;
+    border-top: 2px solid#5997E3;
+}
+.footer-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #1C1A44;
+    padding-bottom: 20px;
+}
+.footer-top nav{
+    width: 33%;
+}
+.footer-top nav p {
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #1C1A44;
+}
+.footer-nav {
+    width: 31%;
+}
+.footer-nav nav {
+    width: 100%;
+}
+.footer-top nav ul li a {
+    color:#5997E3;
+    font-weight: 600;
+}
+.footer-top nav ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+.footer-top nav ul li:before {
+    content: "";
+    background: url(../img/arrow-white.svg);
+    width:  9px;
+    height: 15px;
+    display: flex;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer-center {
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #1C1A44;
+    width: 100%;
+}
+.footer-center img:nth-of-type(1) {
+    width: 38px;
+    height: 36px;
+    margin-right: 25px;
+}
+.footer-center img:nth-of-type(2) {
+    width: 110px;
+    height: 30px;
+    margin-right: 25px;
+}
+.footer-center img:nth-of-type(3) {
+    width: 120px;
+    height: 35px;
+    margin-right: 25px;
+}
+.footer-center img:nth-of-type(4) {
+    width: 120px;
+    height: 35px;
+    margin-right: 25px;
+
+}
+.footer-center img:nth-of-type(5) {
+    width:120px;
+    height: 35px;
+}
+.footer-bottom p{
+color: #969393;
+}
+.footer-bottom-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.after-none::before {
+    content: none !important;
+}
+.table-height {
+    height: 100% !important;
+}
+/*----------------- Max-width: 1200px ----------------------------------------------*/
+@media (max-width: 1200px) {
+.betting-sites a {
+    font-size: 14px;
+}
+.information .wrapper {
+    position: relative;
+    padding-bottom: 50px;
+}
+.information-left-navigation ul {
+    position: absolute;
+    width: 75%;
+}
+.page-content-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.page-content-list li {
+    padding: 0 10px;
+}
+.page-content-title {
+    text-align: center;
+}
+}
+/*----------------- Max-width: 992px ----------------------------------------------*/
+@media (max-width: 992px) {
+    .table-free-bet-offers tr td button::before {
+        content: none;
+    }
+    .table-overflow.table-scroll {
+        height: auto;
+        overflow: hidden;
+    }
+.wrapper {
+    padding: 0 50px;
+}
+.information-left-navigation ul {
+    width: 90%;
+}
+.page-content-title {
+    line-height: 100% !important;
+}
+.information-left {
+    padding-top: 20px;
+}
+.bookmakers-card-left img {
+    max-width: 100%;
+}
+.bookmakers-card-center nav ul {
+    flex-direction: column;
+    width: 100%;
+}
+.bookmakers-card-center nav ul li {
+    width: 100%;
+}
+.bookmakers-card-price {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.medal {
+    padding: 0 15px;
+}
+.review {
+    margin-left: 0;
+    font-size: 11px;
+}
+.bookmakers-card-right button {
+    width: 100%;
+    padding: 10px;
+    font-size: 11px;
+    justify-content: space-around;
+}
+.bookmakers-card-right button::after {
+    margin-left: 5px;
+}
+.bookmakers-card-tittle {
+    flex-direction: column-reverse;
+    align-items: baseline;
+}
+.medal {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.table-free-bet-offers .table-tr th:nth-of-type(1) {
+    width: 150px;
+}
+.table-free-bet-offers tr td button {
+    width: 150px;
+}
+.table-free-bet-offers tr td button {
+    padding-left: 45px;
+}
+.advantages {
+    padding-right: 15px;
+}
+.table-title th {
+    font-size: 14px;
+}
+.table-comparing-betting-sites tr td:nth-of-type(1) {
+    font-size: 14px;
+}
+.table-free-bet-offers tr td button::before {
+    content: "";
+}
+.table-info-border {
+    display: flex;
+}
+.background-table p :nth-of-type(1) {
+    line-height: 100%;
+}
+.background-table div table tr td {
+    padding: 5px;
+    font-size: 14px;
+}
+.background-table div table tr td b{
+    padding: 5px;
+    font-size: 14px;
+}
+.footer-bottom p {
+    margin-bottom: 0 !important;
+    padding-bottom: 20px;
+}
+.header-navigation li {
+    min-width: max-content;
+}
+.select.language {
+    left: auto;
+    right: 340%;
+}
+}
+@media (max-width: 768px) {
+    .bookmakers-card-container {
+        height: auto;
+        flex-direction: column;
+    }
+    .bookmakers-card-left {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+    .bookmakers-card-left img {
+        width: 100px;
+        height: 50px;
+    }
+    .bookmakers-card-center {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .bookmakers-card-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 0 0 20px 20px;
+        padding: 0 20px;
+    }
+    .review {
+        margin: 0;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .bookmakers-card-center nav ul li {
+        margin-bottom: 15px;
+    }
+    .bookmakers-header {
+        align-items: flex-start;
+    }
+   .bookmakers-header-left {
+    flex-direction: column;
+   }
+   .bookmakers-header-left button:nth-of-type(1){
+    margin-bottom: 15px;
+   }
+   .bookmakers-calendar {
+    margin-top: 0;
+   }
+   header  {
+    padding-top: 20px;
+   }
+   header .wrapper {
+    flex-direction: column;
+   }
+   .header-navigation {
+    width: 100%;
+   }
+   .wrapper {
+    padding: 0 20px;
+   }
+   .information-left-navigation ul li {
+    font-size: 14px;
+    margin-bottom: 0;
+   }
+   .bookmakers-card-left img {
+    object-fit: contain;
+   }
+   .bookmakers-card-right button {
+    width: 25%;
+   }
+   .bookmakers-card-right {
+    padding: 10px 20px;
+   }
+   .betting-sites a {
+    font-size: 12px;
+   }
+   .table-title th {
+    font-size: 11px;
+   }
+   p {
+    font-size: 14px !important;
+    line-height: 140%;
+   }
+   .background-table div table tr td {
+    font-size: 12px;
+   }
+   .background-table div table tr td b{
+    font-size: 12px;
+    padding: 0;
+   }
+   .footer-center {
+    flex-wrap: wrap;
+   }
+    .footer-center img{
+    margin-bottom: 20px;
+   }
+   .header-navigation li {
+    min-width: max-content;
+}
+.information-right img {
+    margin-left: 10px;
+}
+.logotype {
+    margin-bottom: 20px;
+}
+header {
+    height: auto;
+}
+.header-navigation {
+    padding-bottom: 10px;
+}
+td {
+    font-size: 14px;
+}
+.bonuses-container-top img {
+    max-width: 130px;
+}
+li {
+    font-size: 14px;
+    line-height: 100%;
+}
+h4 {
+    font-size: 23px;
+}
+.info-container-evaluate ul {
+    padding-left: 30px;
+}
+.select.language {
+    left: auto;
+    right: 342%;
+}
+} 
+@media (max-width: 576px) {
+    .bookmakers-header {
+        flex-direction: column;
+    }
+    .bookmakers-calendar {
+        margin-top: 15px;
+    }
+    .bookmakers-card-price {
+        font-size: 10px;
+    }
+    .bookmakers-card-right {
+        padding: 10px 20px;
+    }
+    .bookmakers-card-tittle {
+        flex-direction: column;
+    }
+    .medal {
+        text-align: center;
+    }
+    header {
+        height: auto;
+    }
+    header .wrapper {
+        position: relative;
+        align-items: baseline;
+    }
+    .header-navigation li a {
+        padding: 0;
+    }
+    .header-navigation {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .header-navigation li:nth-of-type(4) {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        margin-left: 0;
+    }
+    .england {
+        margin-left: 0;
+    }
+    .information .wrapper{
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .information-left {
+        position: relative;
+        z-index: 1;
+    }
+    .information-right {
+        position: absolute;
+        z-index: 0;
+        top: 20px;
+        right: 20px;
+    }
+    .information-right img{
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+    p {
+        font-size: 16px !important;
+        line-height: 1.8em;
+    }
+    a {
+        font-size: 16px !important;
+    }
+    li {
+        font-size: 16px !important;
+    }
+    .table-free-bet-offers tr td button {
+        width: max-content;
+        font-size: 0;
+        padding: 20px;
+    }
+    .table-free-bet-offers tr td button::before{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .table-free-bet-offers .table-tr th:nth-of-type(1) {
+        width: 100px;
+    }
+    .bookmakers-card-right button {
+        width: 35%;
+        font-size: 9px;
+    }
+    .bookmakers-card-price {
+        margin-bottom: 0;
+    }
+    .bookmakers-card-center nav ul li::before {
+        width: 15px;
+        height: 15px;
+    }
+    .medal {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+    .page-content .wrapper {
+        flex-direction: column;
+    }
+    .page-content-title {
+        margin: 15px 0 !important;
+    }
+    .page-content-list {
+        width: 100%;
+    }
+    .page-content-list li {
+        margin-bottom: 10px;
+    }
+    .information-left-navigation ul {
+        width: 100%;
+    }
+    .table-title th {
+        font-size: 8px;
+        padding: 0 10px;
+    }
+    .table-comparing-betting-sites tr td:nth-of-type(1) {
+        font-size: 12px;
+    }
+    .bonuses-container-top img {
+        max-width: 100px;
+        margin-right: 15px;
+    }
+    .container-companies {
+        flex-direction: column;
+        margin-bottom: 25px;
+        border: 1px solid #EDEDED;
+    }
+    .container-companies-left {
+        padding-top: 20px;
+        display: flex;
+        min-width: 100%;
+        max-width: 100%;
+        padding-right: 0 !important;
+    }
+    .bet-now {
+        width: 40%;
+    }
+    .table-free-bet-offers tr td button {
+        padding: 17px !important;
+        font-size: 10px !important;
+    }
+    .table-free-bet-offers tr td button::before {
+        content: "" !important;
+    }
+    .bet-now::after {
+        content: none;
+    }
+    .container-companies-right {
+        padding-left: 0;
+        text-align: center;
+    }
+    .container-companies-left img {
+        max-width: 50%;
+    }
+    .table-free-bet-offers tr td {
+        padding: 0;
+    }
+    .table-free-bet-offers tr td:nth-of-type(2) {
+        padding: 10px;
+    }
+    .table-free-bet-offers tr td:nth-of-type(3) {
+        padding: 10px;
+    }
+    .container-companies-right {
+        padding: 0 10px;
+    }
+    .payment-methods-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .payment-methods-container-right {
+        padding-left: 0;
+    }
+    .background-table div table tr td {
+        font-size: 8px !important;
+    }
+    .table-title td b{
+        font-size: 8px !important;
+    }
+    .information-left-navigation ul li {
+        font-size: 10px;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .information-left-navigation ul li svg {
+        margin-bottom: 10px;
+    }
+    td {
+        font-size: 10px !important;
+    }
+    .table-free-bet-offers tr td button {
+        font-size: 0 !important;
+    }
+    .select a {
+        padding: 10px !important;
+        text-align: center;
+    }
+    .header-navigation li a {
+        padding: 10px !important;
+    }
+    .select.language {
+        left: auto;
+        right: 342%;
+    }
+    .header-navigation li:nth-of-type(1) a:before {
+        content: none;
+    }
+    .header-navigation li:nth-of-type(2) a:before {
+        content: none;
+    }
+    .header-navigation li:nth-of-type(3) a:before {
+        content: none;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .bookmakers-card-price {
+        width: 50%;
+    }
+    .table-overflow {
+        overflow-x: scroll !important;
+    }
+    .table-overflow.table-scroll {
+        height: 100% !important;
+    }
+    .table-overflow.table-scroll table {
+        overflow: scroll;
+        width: 500px;
+    }
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-top nav {
+        width: 100%;
+        flex-direction: row;
+    }
+    h1 {
+        width: 70%;
+    }
+    .betting-sites-articles-container-top {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .betting-sites-articles-container-bottom {
+    flex-wrap: wrap;
+}
+    .betting-sites {
+        width: 50% !important;
+        margin-bottom: 10px;
+    }
+    .info-container-content-company p{
+        font-size: 16px !important;
+        line-height: 1.8em;
+    }
+    .info-container-nav li {
+        font-size: 16px !important;
+        line-height: 1.8em;
+    }
+}
