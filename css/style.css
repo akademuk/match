@@ -742,7 +742,7 @@ background:  #F6D2B0;
     display: flex;
     position: absolute;
     left: -20px;
-    top: 2px;
+    top: 7px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1250,6 +1250,242 @@ color: #969393;
 .table-height {
     height: 100% !important;
 }
+.content-tabla {
+    display: none;
+}
+.content-tabla-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 62px;
+}
+.content-tabla-top p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700 !important;
+    font-size: 17px;
+    border: 1px solid rgb(112,162,230);
+    background: #5997E3;
+    color: #fff;
+    min-height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.content-tabla-top p:nth-of-type(1) {
+    width: 5%;
+}
+.content-tabla-top p:nth-of-type(2) {
+    width: 15%;
+}
+.content-tabla-top p:nth-of-type(3) {
+    width: 10%;
+}
+.content-tabla-top p:nth-of-type(4) {
+    width: 20%;
+}
+.content-tabla-top p:nth-of-type(5) {
+    width: 20%;
+}
+.content-tabla-top p:nth-of-type(6) {
+    width: 15%;
+}
+.content-tabla-top p:nth-of-type(7) {
+    width: 15%;
+   height: 62.59px;
+}
+.content-tabla-main {
+    display: flex;
+    width: 100%;
+    border: 1px solid #E6EBF0;
+}
+.content-tabla-main p:nth-of-type(1) {
+    min-width: 5%;
+    border: 1px solid #E6EBF0;
+    border-bottom: none;
+}
+.content-table {
+    max-width: 15%;
+    min-width: 15%;
+    border: 1px solid #E6EBF0;
+    border-bottom: none;
+}
+.content-tabla-main p:nth-of-type(2) {
+    min-width: 10%;
+    border: 1px solid #E6EBF0;
+    border-bottom: none;
+}
+.content-tabla-main ul:nth-of-type(1) {
+    min-width: 20%;
+    border: 1px solid #E6EBF0;
+    border-bottom: none;
+}
+.content-tabla-main ul:nth-of-type(2) {
+    min-width: 20%;
+    border: 1px solid #E6EBF0;
+    border-bottom: none;
+}
+.content-tabla-main p:nth-of-type(3) {
+    min-width: 15%;
+    border: 1px solid #E6EBF0;
+    border-bottom: none;
+}
+.content-tabla-main .content-tabla-main-btn {
+    min-width: 15%;
+    border: 1px solid #E6EBF0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+}
+.content-tabla .content-tabla-main {
+    border: none;
+}
+.content-tabla-main-btn button{
+    text-transform: uppercase;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #5997E3;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    cursor: pointer;
+}
+.content-tabla-main p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5997E3;
+    font-weight: 900;
+    font-size: 20px;
+}
+.content-tabla-main-price {
+ text-align: center;
+ line-height: 1.2em;
+ padding: 16px;
+}
+.plus {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: center;
+}
+.minus {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: center;
+}
+.minus li {
+    line-height: 1.5em !important;
+    font-size: 14px !important;
+    color: #595959;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+.minus svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.minus li {
+    line-height: 1.5em !important;
+    font-size: 14px !important;
+    color: #595959;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+.minus svg path {
+    fill: rgb(207,42,42);
+}
+.plus li {
+    line-height: 1.5em !important;
+    font-size: 14px !important;
+    color: #595959;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+.plus svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+.plus svg path {
+    fill: rgb(10,176,89);
+}
+.content-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.reiting {
+    display: flex;
+    align-items: flex-end;
+    font-size: 24px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+}
+.reiting span{
+    font-size: 14px !important;
+    margin-top: 5px;
+}
+.reiting svg {
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+.reiting svg path {
+    fill: #FFD700;
+}
+.content-table p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    border: none !important;
+}
+.content-table img {
+    max-width: 75%;
+    max-height: 30%;
+}
+.content-tabla-main:nth-last-child(1) {
+    border-bottom: 1px solid #E6EBF0 !important;
+}
+.active {
+    display: flex;
+}
+.possive {
+    display: none;
+}
+.content-tabla .wrapper{
+    padding: 0;
+}
+.content-tabla {
+    margin-top: 30px;
+}
+.color {
+    color:#000 !important;
+    background: transparent !important;
+    border: 1px solid #EDEDED !important;
+}
+.coloroff {
+    background: #5997E3 !important;
+    color: #fff !important;
+    border: none !important;
+}
 /*----------------- Max-width: 1200px ----------------------------------------------*/
 @media (max-width: 1200px) {
 .betting-sites a {
@@ -1379,6 +1615,39 @@ color: #969393;
 .select.language {
     left: auto;
     right: 340%;
+}
+.content-tabla .wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+.container-table1 {
+    height: 100%;
+    overflow: scroll;
+}
+.content-tabla-main {
+    flex-direction: column;
+}
+.content-tabla-top p:nth-of-type(7) {
+    display: none;
+}
+.content-tabla-top {
+    width: 100%;
+}
+.content-tabla-top p {
+    width: 17% !important;
+}
+.content-tabla-main {
+    border: 1px solid #E6EBF0 !important;
+    margin-bottom: 25px;
+}
+.content-table {
+    padding-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+.content-tabla-main-btn {
+    padding: 20px;
 }
 }
 @media (max-width: 768px) {
@@ -1512,6 +1781,10 @@ h4 {
 }
 } 
 @media (max-width: 576px) {
+    .content-tabla-top p {
+        font-size: 9px !important;
+        padding: 15px 5px;
+    }
     .bookmakers-header {
         flex-direction: column;
     }
