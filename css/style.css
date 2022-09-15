@@ -1706,7 +1706,7 @@ color: #969393;
     width: 100%;
    }
    .wrapper {
-    padding: 0 20px;
+    padding: 0 10px;
    }
    .information-left-navigation ul li {
     font-size: 14px;
@@ -1989,7 +1989,7 @@ h4 {
         text-align: center;
     }
     .header-navigation li a {
-        padding: 10px !important;
+        padding: 5px !important;
     }
     .select.language {
         left: auto;
@@ -2048,5 +2048,11 @@ h4 {
     .info-container-nav li {
         font-size: 16px !important;
         line-height: 1.8em;
+    }
+    .information-left-navigation ul li {
+        font-size: 12px !important;
+    }
+    .header-navigation li a {
+        font-size: 12px !important;
     }
 }
