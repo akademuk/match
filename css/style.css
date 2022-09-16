@@ -1681,6 +1681,9 @@ color: #969393;
 .content-tabla-top p:nth-of-type(2) {
     height: 20vh;
 }
+.content-tabla-top p:nth-of-type(3) {
+    height: 5vh;
+}
 .plus {
     height: 20vh;
 }
