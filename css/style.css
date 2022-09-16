@@ -1623,22 +1623,16 @@ color: #969393;
 .container-table1 {
     height: 100%;
     overflow: scroll;
+    scroll-snap-type: x mandatory;
 }
 .content-tabla-main {
     flex-direction: column;
 }
-.content-tabla-top p:nth-of-type(7) {
-    display: none;
-}
 .content-tabla-top {
     width: 100%;
 }
-.content-tabla-top p {
-    width: 17% !important;
-}
 .content-tabla-main {
     border: 1px solid #E6EBF0 !important;
-    margin-bottom: 25px;
 }
 .content-table {
     padding-top: 20px;
@@ -1649,6 +1643,59 @@ color: #969393;
 .content-tabla-main-btn {
     padding: 20px;
 }
+.content-tabla .wrapper {
+    display: flex;
+    height: 55vh;
+}
+.content-tabla-top {
+    flex-direction: column;
+    height: 100vh;
+    width: 20%;
+}
+.container-table1 {
+    width: 80%;
+}
+.content-tabla-top p {
+    min-height: auto;
+    margin: 0;
+    width: 100% !important;
+}
+.content-tabla-top p:nth-of-type(1) {
+    display: none;
+}
+.content-tabla-top p:nth-of-type(2) {
+   height: 10vh;
+}
+.content-tabla-top p:nth-of-type(3) {
+    height: 5vh;
+ }
+ .content-tabla-top p:nth-of-type(4) {
+    height: 15vh;
+ }
+  .content-tabla-top p:nth-of-type(5) {
+    height: 12vh;
+ }
+.content-tabla-main .content-table {
+    height: 8vh;
+}
+.content-tabla-main p:nth-of-type(1) {
+    height: 2vh;
+}
+.reiting {
+    height: 5vh;
+}
+.plus {
+    height: 15vh;
+    justify-content: flex-start;
+}
+.minus {
+    height: 12vh;
+    justify-content: flex-start;
+}
+.content-tabla-main-btn {
+    padding: 10px;
+}
+
 }
 @media (max-width: 768px) {
     .bookmakers-card-container {
@@ -2059,5 +2106,14 @@ h4 {
         height: 30px;
         background-repeat: no-repeat;
         padding-left: 5px;
+    }
+    .content-table p {
+        margin-top: 5px;
+    }
+    .content-table {
+        padding-top: 5px;
+    }
+    .content-table img {
+        max-height: 50%;
     }
 }
