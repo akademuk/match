@@ -1654,6 +1654,7 @@ color: #969393;
 }
 .reiting {
     height: 5vh;
+    min-height: 5vh;
 }
 .content-tabla-top p:nth-of-type(1) {
     display: none;
