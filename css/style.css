@@ -2137,4 +2137,22 @@ h4 {
     .content-tabla-top p {
         padding: 0;
     }
+    .plus li {
+        line-height: 100% !important;
+        font-size: 12px !important;
+    }
+    .minus li {
+        line-height: 100% !important;
+        font-size: 12px !important;
+    }
+    .plus svg {
+        width: 13px;
+        height: 13px;
+        top: -2px;
+    }
+    .minus svg {
+        width: 13px;
+        height: 13px;
+        top: -2px;
+    }
 }
